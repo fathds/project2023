@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Productos</title>
+    <!-- Agrega la referencia a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Lista de Productos</h1>
+ 
+        <!-- Formulario para agregar productos -->
+        <form id="product-form" class="mb-4">
+            <div class="form-row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="product-name" placeholder="Nombre del producto" required>
+                </div>
+                <div class="col-md-4">
+                    <input type="number" class="form-control" id="product-price" placeholder="Precio" step="0.01" required>
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary">Agregar Producto</button>
+                </div>
+            </div>
+        </form>
+ 
+        <div id="product-cards" class="row">
+            <!-- <button id="delete-select-button" class="btn btn-danger">Eliminar producto seleccionado</button> -->
+            <!-- Product cards will be displayed here -->
+        </div>
+ 
+        <!-- Botón para ordenar productos -->
+        <button id="sort-button" class="btn btn-secondary">Ordenar por Precio</button>
+
+        <button id="delete-button" class="btn btn-danger">Borrar productos</button>
+
+        <button id="delete-last-button" class="btn btn-warning">Eliminar último producto</button>
+
+        <button id="save-button" class="btn btn-info">Guardar productos</button>
+        
+    </div>
+ 
+    <!-- Agrega la referencia a Bootstrap JS y jQuery (necesario para Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Agrega tu script personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
